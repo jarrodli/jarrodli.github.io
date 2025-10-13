@@ -7,13 +7,13 @@ export const Fonts = () => (
         font-family: 'SSP-reg';
         font-style: normal;
         font-display: swap;
-        src: url('./ffonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+        src: url('./ffonts/Satoshi/Satoshi-Regular.ttf');
       }
       @font-face {
         font-family: 'SSP-bold';
         font-style: bold;
         font-display: swap;
-        src: url('./ffonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+        src: url('./ffonts/Satoshi/Satoshi-Bold.ttf');
       }
       `}
     />

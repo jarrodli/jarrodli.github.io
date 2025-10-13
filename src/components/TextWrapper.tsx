@@ -15,14 +15,17 @@ import {
 
 interface Props {
     children: ReactNode;
+    paddingTop?: string;
 }
 
-const TextWrapper: FunctionComponent<Props> = ({ children }) => {
+const TextWrapper: FunctionComponent<Props> = ({ children, ...props }) => {
     return (
         <Text
-            textAlign="justify"
-            padding="4"
-            fontSize={{ base: "24px", md: "3xl", lg: "3xl" }}
+            textAlign={{ base: "justify", md: "left", lg: "left" }}
+            paddingTop="1"
+            paddingBottom="1"
+            fontSize={{ base: "24px", md: "24px", lg: "24px" }}
+            {...props}
         >
             {children}
         </Text>

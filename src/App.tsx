@@ -19,71 +19,51 @@ const App = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <Container
-            centerContent
-            padding={{ base: "8", md: "16", lg: "16" }}
-            maxW="8xl"
-        >
-            <Heading fontSize={{ base: "40px", md: "56px", lg: "56px" }}>
+        <Container padding={{ base: "8", md: "16", lg: "16" }} maxW="4xl">
+            {/* <Heading
+                textAlign="center"
+                fontSize={{ base: "38px", md: "38px", lg: "38px" }}
+            >
                 About
-            </Heading>
-            <Box padding={{ base: "0", md: "4", lg: "4" }} color="black">
+            </Heading> */}
+            <Box padding={{ base: "0", md: "0", lg: "0" }} color="black">
                 <TextWrapper>
-                    My name is Jarrod Li, a Computer Science and Law student at{" "}
+                    Jarrod is currently a Lawyer at the{" "}
                     <Link
                         color="blue.400"
-                        href="https://www.unsw.edu.au/"
+                        href="https://www.ags.gov.au/people/profiles/li-jarrod"
                         target="_blank"
                     >
-                        UNSW Sydney
-                    </Link>
-                    . I currently work at{" "}
+                        Australian Government Solicitor
+                    </Link>{" "}
+                    and a Systems Engineer / Data Scientist at{" "}
                     <Link
                         color="blue.400"
                         href="https://jade.io/"
                         target="_blank"
                     >
-                        JADE
-                    </Link>{" "}
-                    in the areas of <Text as="b">Legal Informatics</Text>, Data
-                    Science, and Software Engineering. See a recent example of
-                    my work at{" "}
+                        Jade
+                    </Link>
+                    . He was previously an Associate to a Judge of the{" "}
                     <Link
                         color="blue.400"
-                        href="https://labs.jade.io/"
+                        href="https://supremecourt.nsw.gov.au/"
                         target="_blank"
                     >
-                        JADE labs
+                        Supreme Court of New South Wales
                     </Link>
-                    . From time to time, I also lend support to our fantastic
-                    law faculty as a Research Assistant.
+                    .
                 </TextWrapper>
-                <TextWrapper>
-                    Especially interested in <Text as="b">Rules as Code</Text>,
-                    digital competition, data privacy, and cybersecurity law.
-                    See an example of my work{" "}
-                    <Link
-                        color="blue.400"
-                        href="https://unsw-my.sharepoint.com/:b:/g/personal/z5169806_ad_unsw_edu_au1/ETIan7ghukdPgeqtBmdeDewBcAvBqoRl8wSGriKg52MTIQ?e=e82348"
-                        target="_blank"
-                    >
-                        here
-                    </Link>
-                    . If you're also interested in the intersection between law
-                    and technology, I encourage you to get in touch!
+                <TextWrapper paddingTop="4">
+                    He was admitted as a Lawyer of the Supreme Court of New
+                    South Wales in 2025.
                 </TextWrapper>
-                <TextWrapper>
-                    At the moment, my primary focus is on developing{" "}
-                    <Text as="b">robust LegalTech designs</Text> that are
-                    capable of incorporating our laws, customs, and values in a
-                    reproducible way.
+                <TextWrapper paddingTop="4">
+                    He graduated from UNSW Sydney with an LL.B., Laws (Honours)
+                    and a B.Sc., Computer Science (Distinction).
                 </TextWrapper>
-                <TextWrapper>
-                    Naturally obsessed with Rust and its ADT's, fast runtime,
-                    and vibrant ecosystem.
-                </TextWrapper>
-                <TextWrapper>
-                    Discover more about my technical skills and previous work on{" "}
+                {/* <TextWrapper>
+                    My previous work is available on{" "}
                     <Link
                         color="blue.400"
                         href="https://www.linkedin.com/in/jarrodli/"
@@ -98,11 +78,14 @@ const App = () => {
                         target="_blank"
                     >
                         GitHub
-                    </Link>{" "}
+                    </Link>
                     .
-                </TextWrapper>
+                </TextWrapper> */}
             </Box>
-            <TextWrapper>{"< admin at jarrodli dot com >"}</TextWrapper>
+
+            <Container centerContent paddingTop="8" color="black">
+                <TextWrapper>{"admin at jarrodli dot com"}</TextWrapper>
+            </Container>
         </Container>
     );
 };
